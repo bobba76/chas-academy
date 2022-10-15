@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: ghostwhite;
+}
+
+.container {
+  height: 300vh;
+  display: grid;
+  row-gap: 2rem;
+
+  grid-template-rows: 1fr 1.75fr 1.75fr 1.75fr 1.75fr 1fr 3fr;
+  grid-template-areas:
+    "header"
+    "apply"
+    "loan"
+    "how"
+    "international"
+    "free"
+    "footer";
+}
+
+.container > div {
+  border-radius: 8px;
+  margin-inline: 1rem;
+}
+
+header {
+  grid-area: header;
+  background-color: purple;
+}
+
+.apply {
+  grid-area: apply;
+  background-color: rgb(243, 196, 77);
+}
+
+.loan {
+  grid-area: loan;
+  background-color: plum;
+}
+
+.how {
+  grid-area: how;
+  background-color: skyblue;
+}
+
+.international {
+  grid-area: international;
+  background-color: aquamarine;
+}
+
+.free {
+  grid-area: free;
+  background-color: purple;
+}
+
+footer {
+  grid-area: footer;
+  background-color: purple;
+}
+
+@media (min-width: 922px) {
+  .container {
+    height: 200vh;
+    column-gap: 1.5rem;
+    grid-template-columns: minmax(0, 1fr) 300px 300px 300px minmax(0, 1fr);
+    grid-template-rows: 1fr 1.75fr 1.75fr 1fr 3fr;
+    grid-template-areas:
+      "header header header header header"
+      ". apply apply apply ."
+      ". loan how international ."
+      ". free free free ."
+      "footer footer footer footer footer";
+  }
+
+  .container > div {
+    margin-inline: 0rem;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 300px 300px 300px minmax(0, 1fr);
+  }
+
+  img {
+    grid-column: 2 / 3;
+  }
+}
