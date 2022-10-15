@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+}
+
+h1 {
+  font-size:5vw;
+}
+
+h2 {
+  font-size:3vw;
+}
+
+h3 {
+  font-size:2vw;
+}
+
+p {
+  font-size: 1.2vw
+}
+
+.line {
+  border-bottom: white solid 2px;
+  width: 100%;
+}
+
+body {
+  height:100vh;
+  font-family: 'Reem Kufi Fun', 'Roboto', sans-serif;
+  background: #212121;
+  color: white;
+  display:flex; 
+  flex-direction:column; 
+}
+
+nav {
+  display: flex;
+  justify-content:end;
+  height: 200px;
+}
+
+nav > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: black white white white;
+  border-style: solid;
+  border-width: 0 1px;
+  width: 15em;
+  height: 70px;
+  color: white;
+}
+
+nav > a:hover {
+  background-color: #0D7377;
+}
+
+header {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 15px 15px 15px
+}
+
+header > h1 {
+  max-width: 555px;
+}
+
+header > h1:hover {
+  color: #14FFEC;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-1 {
+  width: 20%;
+  padding: 30px;
+}
+
+.col-2 {
+  width: 80%;
+  padding: 30px;
+}
+
+.project {
+  display: flex;
+}
+
+.project p {
+  line-height: 1.5;
+}
+
+footer {
+  height: 30px;
+  padding: 15px;
+  margin-top: auto; 
+  display: flex;
+  align-items:flex-end;
+  justify-content: center;
+}
+
+footer > p {
+  letter-spacing: 2px;
+  font-weight: bold;
+}
